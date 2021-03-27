@@ -27,4 +27,4 @@ for i in range(len(w)):
             dp[i]=temp+dp[j-1]
             p[i]=j
 print_line(p,len(w)-1)
-print("Minimum cost is: ", dp[-1])
+print("Minimum cost is:", dp[-1])
