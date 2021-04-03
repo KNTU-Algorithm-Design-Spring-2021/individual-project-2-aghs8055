@@ -5,12 +5,9 @@ string=input("Enter received message: ").lower()
 n=len(string)
 path=[-1]*(n+1)
 path[n]=n
-dp=[[-1]*(n+1) for i in range(n+1)]
-dp[-1][-1]=""
 for i in range(n-1,-1,-1):
     for j in range(n,i,-1):
         if string[i:j] in words and path[j]!=-1:
-            dp[i][j]=path[j]
             path[i]=j
             break
 print("The message is: ",end=" ")
