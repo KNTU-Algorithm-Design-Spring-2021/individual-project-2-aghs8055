@@ -17,3 +17,4 @@ i=0
 while i!=n:
     print(string[i:path[i]],end=" ")
     i=path[i]
+print()
